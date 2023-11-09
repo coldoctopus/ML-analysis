@@ -8,13 +8,13 @@ score = pd.Series([384,345,523,600,193], index =['A','B',"C",'D','E'])
 #read from files
 #create csv file with notepad, with excel (file name).csv then select csv
 #use index as first: index_col=0
-phase_result = pd.read_csv("D:\legacy code\games.csv", index_col=0)
+#phase_result = pd.read_csv("D:\legacy code\games.csv", index_col=0)
 
 #.head(): print first 5 lines
 #.shape: get size of file
 #.to_csv(" "): to dave DataFrame to a csv
 
-print(phase_result)
+print(table)
 #print(phase_result.head())
 #print(phase_result.shape)
 
@@ -32,7 +32,7 @@ print(phase_result)
 #.isnull() , .notnull()
 index = [1,3,5,6]
 #frame = phase_result.iloc[index]
-frame = phase_result.loc[101:105,"address"] #since index = student id at upper code
+#frame = phase_result.loc[101:105,"address"] #since index = student id at upper code
 #print(frame)
 
 #assign data: fixed or interable value
