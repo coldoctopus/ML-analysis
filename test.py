@@ -17,11 +17,11 @@ image = cv2.resize(image , (200, 200))
 image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 # Compute HOG features
-hog_features, hog_image = hog(image, orientations=9, pixels_per_cell=(8, 8), cells_per_block=(10, 10), visualize=True)
+hog_features= hog(image, orientations=9, pixels_per_cell=(8, 8), cells_per_block=(2, 2), visualize=False)
 
 data.append(hog_features)
 
 
-print(data)
+print(hog_features.shape)
 
-print(imgList.iloc[0:30])
+#print(imgList.iloc[0:30])
